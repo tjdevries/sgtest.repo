@@ -9,6 +9,12 @@ namespace Radzen.Blazor.Tests
             var x = @$"Multi
             Line
             String";
+
+            var other = @$"
+    Multi
+            Line
+                String
+            ";
         }
     }
 }
