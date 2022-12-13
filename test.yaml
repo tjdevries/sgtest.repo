@@ -4,8 +4,15 @@ version: v1
 type: public
 alert: true
 emailDomain: sourcegraph.com
+additionalAdmins:
+  - sqs@sourcegraph.com
 cd: true
 instanceType: internal
+siteConfig:
+  observability.tracing:
+    sampling: all
+    type: opentelemetry
+    urlTemplate: "https://console.cloud.google.com/traces/list?tid={{ .TraceID }}&authuser=0&project=sourcegraph-managed-sg"
 featureFlags:
   - name: indexing-status-message
     boolean: true
