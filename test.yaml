@@ -1,0 +1,14 @@
+customer: sg
+endpoint: https://sourcegraph.sourcegraph.com
+version: v1
+type: public
+alert: true
+emailDomain: sourcegraph.com
+cd: true
+instanceType: internal
+featureFlags:
+  - name: indexing-status-message
+    boolean: true
+  - name: search-hybrid
+    boolean: true
+disableManagedSMTP: false
