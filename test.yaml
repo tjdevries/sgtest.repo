@@ -12,3 +12,4 @@ featureFlags:
   - name: search-hybrid
     boolean: true
 disableManagedSMTP: false
+
