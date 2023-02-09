@@ -1,0 +1,3 @@
+Sheet1!A1	FORMULA	sum(1,2,3)
+Sheet1!A1	VALUE	6
+'Sheet Two'!A2	VALUE	10
